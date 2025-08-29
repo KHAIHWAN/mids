@@ -1,0 +1,7 @@
+{
+	"IndexPage": {
+		"title": "Hello Next.js 15 + next-intl",
+		"intro": "This page is localized in English.",
+		"switch": "Switch language"
+	}
+}
