@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { Golos_Text } from 'next/font/google';
 import './globals.css';
+import Header from '@/components/layout/front/Header';
 
 const golos = Golos_Text({
 	variable: '--font-golos',
@@ -38,6 +39,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<'/[
 		<html lang={locale}>
 			<body className={`${golos.variable} antialiased`}>
 				<NextIntlClientProvider locale={locale} messages={messages}>
+					<Header />
 					{children}
 				</NextIntlClientProvider>
 			</body>
