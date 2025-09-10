@@ -3,5 +3,13 @@
 		"title": "Hello Next.js 15 + next-intl",
 		"intro": "This page is localized in English.",
 		"switch": "Switch language"
+	},
+	"Header": {
+		"about": "About",
+		"academics": "Academics",
+		"newsEvents": "News & Events",
+		"contact": "Contact",
+		"login": "Login",
+		"viewCourse": "View Course"
 	}
 }

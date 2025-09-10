@@ -15,11 +15,67 @@ export default function IndexPage({ params }: { params: Promise<{ locale: 'th' |
 
 	return (
 		<main className="p-8 space-y-3">
-			<h1 className="text-2xl font-semibold">{t('title')}</h1>
+			{/* <h1 className="text-2xl font-semibold">{t('title')}</h1>
 			<p>{t('intro')}</p>
 			<Link href="/" locale={nextLocale} className="underline">
 				{t('switch')}
-			</Link>
+			</Link> */}
+
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
+			<div>1</div>
 		</main>
 	);
 }
