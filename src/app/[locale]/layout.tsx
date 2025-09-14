@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
 import "../globals.css";
+import Header from "@/components/layout/front/header/Header";
 
 const golosText = Golos_Text({
   variable: "--font-golos-text",
@@ -41,6 +42,7 @@ export default async function RootLayout({ children, params}: Props) {
       <body
         className={`${golosText.variable} ${kanit.variable} antialiased`}>
         <NextIntlClientProvider>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>
