@@ -5,7 +5,6 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 
 import { routing } from "@/i18n/routing";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 import "../globals.css";
 
@@ -31,9 +30,7 @@ type Props = {
 };
  
 
-export default async function RootLayout({
-  children, params
-}: Props) {
+export default async function RootLayout({ children, params}: Props) {
   const {locale} = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
@@ -42,12 +39,8 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${golosText.variable} ${kanit.variable} antialiased`}
-      >
+        className={`${golosText.variable} ${kanit.variable} antialiased`}>
         <NextIntlClientProvider>
-          <header className="absolute top-4 right-4 z-50">
-            <LanguageSwitcher />
-          </header>
           {children}
         </NextIntlClientProvider>
       </body>
