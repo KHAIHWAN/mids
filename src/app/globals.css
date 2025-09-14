@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-golos-text: var(--font-golos-text);
+  --font-kanit: var(--font-kanit);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +19,19 @@
   }
 }
 
+/* Default font for English */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-golos-text);
+}
+
+/* Apply Kanit font for Thai language */
+html[lang="th"] body {
+  font-family: var(--font-kanit);
+}
+
+/* Ensure smooth font transitions */
+body {
+  transition: font-family 0.2s ease-in-out;
 }
