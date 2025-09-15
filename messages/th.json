@@ -1,5 +1,8 @@
 {
     "HomePage": {
       "title": "สวัสดีชาวโลก!"
+    },
+    "Navigation": {
+      "About": "รู้จักเรา"
     }
   }
