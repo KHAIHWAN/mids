@@ -3,6 +3,9 @@
       "title": "Hello world!"
     },
     "Navigation": {
-      "About": "About"
+      "About": "About",
+      "Academic": "Academic",
+      "News": "News & Events",
+      "Contact": "Contact"
     }
   }
