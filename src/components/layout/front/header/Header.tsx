@@ -2,9 +2,12 @@ import Link from "next/link";
 import Logos from "@/components/layout/Logos";
 import DesktopMenu from "./DesktopMenu";
 import { Button } from "@/components/ui/button";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import LanguageSwitcher2 from "@/components/LanguagesSwitcher2";
+import { useTranslations } from 'next-intl';
 
 export default function Header() {
+    const translate = useTranslations('HeaderAction');
+    
     return (
         <header className="min-h-screen bg-muted">
             <nav className="h-16 bg-background border-b">
@@ -17,8 +20,8 @@ export default function Header() {
 
 
                     <div className="flex items-center gap-3">
-                        <LanguageSwitcher />
-                        <Button>Get Started</Button>
+                        <LanguageSwitcher2 />
+                        <Button className="hidden sm:inline">{translate('Login')}</Button>
                     </div>
 
                     {/* Mobile Menu */}

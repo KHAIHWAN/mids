@@ -2,10 +2,13 @@
     "HomePage": {
       "title": "Hello world!"
     },
-    "Navigation": {
+    "NavigationMenu": {
       "About": "About",
       "Academic": "Academic",
       "News": "News & Events",
       "Contact": "Contact"
+    },
+    "HeaderAction": {
+      "Login": "Login"
     }
   }

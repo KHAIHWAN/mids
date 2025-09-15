@@ -2,10 +2,13 @@
     "HomePage": {
       "title": "สวัสดีชาวโลก!"
     },
-    "Navigation": {
+    "NavigationMenu": {
       "About": "รู้จักเรา",
       "Academic": "หลักสูตรและการศึกษา",
       "News": "ข่าวสาร & กิจกรรม",
       "Contact": "ติดต่อเรา"
+    },
+    "HeaderAction": {
+      "Login": "เข้าสู่ระบบ"
     }
   }

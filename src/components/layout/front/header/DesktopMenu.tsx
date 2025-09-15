@@ -1,12 +1,24 @@
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { navigationAbout, navigationAcademic, navigationNews } from "./MockDataNavigtion";
 import { cn } from "@/lib/utils";
 import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
+import { 
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger
+} from "@/components/ui/navigation-menu";
+
+import { 
+    navigationAbout,
+    navigationAcademic,
+    navigationNews
+} from "./MockDataNavigtion";
 
 export default function DesktopMenu({ className }: { className?: string }) {
     const locale = useLocale();
-    const translate = useTranslations('Navigation');
+    const translate = useTranslations('NavigationMenu');
     
     return (
         <NavigationMenu className={className} viewport={false}>
