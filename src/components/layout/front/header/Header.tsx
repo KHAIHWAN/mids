@@ -4,6 +4,7 @@ import DesktopMenu from "./DesktopMenu";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher2 from "@/components/LanguagesSwitcher2";
 import { useTranslations } from 'next-intl';
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
     const translate = useTranslations('HeaderAction');
@@ -21,12 +22,12 @@ export default function Header() {
 
                     <div className="flex items-center gap-3">
                         <LanguageSwitcher2 />
-                        <Button className="hidden sm:inline">{translate('Login')}</Button>
+                        <Button className="hidden sm:inline-flex">{translate('Login')}</Button>
                     </div>
 
                     {/* Mobile Menu */}
                     <div className="md:hidden">
-                        Mobile Menu
+                        <MobileMenu />
                     </div>
                 </div>
             </nav>
