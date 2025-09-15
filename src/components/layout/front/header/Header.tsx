@@ -1,23 +1,23 @@
 import Link from "next/link";
 import Logos from "@/components/layout/Logos";
+import DesktopMenu from "./DesktopMenu";
 import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header() {
     return (
         <header className="min-h-screen bg-muted">
             <nav className="h-16 bg-background border-b">
                 <div className="h-full flex items-center justify-between max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
-                    <Logos />
+                    <Link href="#">
+                        <Logos />
+                    </Link>
                     {/* Desktop Menu */}
-                    <div>
-                        Desktop Menu
-                    </div>
+                    <DesktopMenu className="hidden md:block" />
 
 
                     <div className="flex items-center gap-3">
-                        <Button variant="outline" className="hidden sm:inline-flex">
-                            Sign In
-                        </Button>
+                        <LanguageSwitcher />
                         <Button>Get Started</Button>
                     </div>
 
