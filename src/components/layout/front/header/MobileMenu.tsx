@@ -13,17 +13,17 @@ export default function MobileMenu() {
                     <Menu />
                 </Button>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="overflow-y-auto">
                 <SheetHeader>
                     <SheetTitle>
-                        <SheetContent className="px-6 py-3">
-                            <Link href="#">
-                                <Logos />
-                            </Link>
-                            <NavigationMobile />
-                        </SheetContent>
+                        <Link href="#" className="inline-block">
+                            <Logos />
+                        </Link>
                     </SheetTitle>
                 </SheetHeader>
+                <div className="px-3">
+                    <NavigationMobile />
+                </div>
             </SheetContent>
         </Sheet>
     );

@@ -23,11 +23,11 @@ export default function Header() {
                     <div className="flex items-center gap-3">
                         <LanguageSwitcher2 />
                         <Button className="hidden sm:inline-flex">{translate('Login')}</Button>
-                    </div>
 
-                    {/* Mobile Menu */}
-                    <div className="md:hidden">
-                        <MobileMenu />
+                        {/* Mobile Menu */}
+                        <div className="md:hidden">
+                            <MobileMenu />
+                        </div>
                     </div>
                 </div>
             </nav>
