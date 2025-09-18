@@ -43,7 +43,9 @@ export default async function RootLayout({ children, params}: Props) {
         className={`${golosText.variable} ${kanit.variable} antialiased`}>
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <main className="min-h-screen bg-muted">
+            {children}
+          </main>
         </NextIntlClientProvider>
       </body>
     </html>
