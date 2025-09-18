@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { Golos_Text, Kanit } from 'next/font/google';
+import { Golos_Text, Kanit, Nunito } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 
@@ -16,6 +16,12 @@ const golosText = Golos_Text({
 
 const kanit = Kanit({
   variable: "--font-kanit",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
@@ -40,11 +46,13 @@ export default async function RootLayout({ children, params}: Props) {
   return (
     <html lang={locale}>
       <body
-        className={`${golosText.variable} ${kanit.variable} antialiased`}>
+        className={`${golosText.variable} ${kanit.variable} ${nunito.variable} antialiased`}>
         <NextIntlClientProvider>
           <Header />
           <main className="min-h-screen bg-muted">
-            {children}
+            <div className="max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8 ">
+              {children}
+            </div>
           </main>
         </NextIntlClientProvider>
       </body>
