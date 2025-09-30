@@ -47,19 +47,19 @@ export default function Feature() {
 						category.content.map((item) => (
 							<CarouselItem
 								key={`${category.title}-${item.title}`}
-								className='basis-full sm:basis-1/2 lg:basis-1/3'>
+								className='basis-full sm:basis-1/2 lg:basis-1/4'>
 								<div className='p-2'>
 									<div className='relative'>
-										<Card className='group w-full shadow-none bg-muted hover:bg-muted/70 transition-colors border-[1.5px] border-[#E5E7EB]'>
+										<Card>
 											<CardHeader className='px-6'>
 												<CardTitle className='flex items-center gap-2 mb-1 text-lg font-semibold tracking-tight truncate'>
-													{item.icon && <item.icon className='h-5 w-5' />}
+													{item.icon && <item.icon className='h-8 w-8' />}
 													<span className='truncate'>
 														{locale === "th" ? item.titleTH : item.title}
 													</span>
 												</CardTitle>
 											</CardHeader>
-											<CardFooter className='px-6 pb-6 text-sm text-muted-foreground'>
+											<CardFooter className='px-6 text-sm text-muted-foreground'>
 												<Link href={item.url} className='text-primary'>
 													Learn more
 												</Link>
@@ -72,8 +72,8 @@ export default function Feature() {
 					)}
 				</CarouselContent>
 				<div className='hidden lg:block absolute top-[-18px] right-12'>
-					<CarouselPrevious className='' />
-					<CarouselNext className='' />
+					<CarouselPrevious />
+					<CarouselNext />
 				</div>
 			</Carousel>
 		</section>
