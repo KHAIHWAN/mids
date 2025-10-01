@@ -6,8 +6,6 @@ import Link from "next/link"
 
 import {
 	Card,
-	CardContent,
-	CardDescription,
 	CardFooter,
 	CardHeader,
 	CardTitle,

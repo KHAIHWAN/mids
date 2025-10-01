@@ -27,7 +27,7 @@ export default function Journal() {
 				opts={{
 					align: "start",
 				}}
-				className='w-full max-w-screen-xl h-min-[300px] mx-auto mt-6 md:mt-12 relative'>
+				className='w-full max-w-screen-xl h-min-[300px] mx-auto mt-6 md:mt-6 relative'>
 				<CarouselContent>
 					{Array.from({ length: 7 }).map((_, index) => (
 						<CarouselItem key={index} className='md:basis-1/2 lg:basis-1/4'>

@@ -13,7 +13,7 @@ export default function MobileMenu() {
                     <Menu />
                 </Button>
             </SheetTrigger>
-            <SheetContent className="overflow-y-auto">
+            <SheetContent className="overflow-y-auto" aria-describedby="">
                 <SheetHeader>
                     <SheetTitle>
                         <Link href="#" className="inline-block">
