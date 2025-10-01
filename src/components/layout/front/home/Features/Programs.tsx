@@ -1,6 +1,6 @@
 "use client"
 
-import { useLocale } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 import Link from "next/link"
 
@@ -19,18 +19,17 @@ import {
 } from "@/components/ui/carousel"
 import { navigationAcademic } from "../../header/MockDataNavigtion"
 
-export default function Feature() {
+export default function Programs() {
 	const locale = useLocale()
+	const translate = useTranslations('Programs')
 	return (
 		<section className='mt-6 md:mt-12'>
 			<div className='space-y-8 md:space-y-12'>
 				<div className='grid gap-6 md:grid-cols-2 md:gap-12'>
-					<h2 className='text-xl font-medium text-[#FAC668]'>PROGRAMS</h2>
+					<h2 className='text-xl font-medium text-[#FAC668]'>{translate('Title')}</h2>
 					<div className='space-y-6'>
 						<p>
-							Multidisciplinary and Interdisciplinary Programs offer students
-							the opportunity to explore a diverse range of subjects and
-							integrate knowledge from various fields.
+							{translate('Description')}
 						</p>
 					</div>
 				</div>
@@ -59,7 +58,7 @@ export default function Feature() {
 											</CardHeader>
 											<CardFooter className='px-6 text-sm text-muted-foreground'>
 												<Link href={item.url} className='text-primary'>
-													Learn more
+													{translate('Button')}
 												</Link>
 											</CardFooter>
 										</Card>

@@ -1,7 +1,7 @@
 "use client"
 
 import Hero from "./hero/Hero"
-import Feature from "./Features/Feature"
+import Programs from "./Features/Programs"
 import Journal from "./Features/Journal"
 import Events from "./Features/Events"
 
@@ -10,7 +10,7 @@ export default function Home() {
 		<div>
 			<Hero />
 			<hr className='my-4' />
-			<Feature />
+			<Programs />
 			<hr className='my-4' />
 			<Journal />
 			<hr className='my-4' />
