@@ -10,5 +10,10 @@
     },
     "HeaderAction": {
       "Login": "Login"
+    },
+    "Hero": {
+      "Section1": "Unlock Your",
+      "Section2": "Potential with",
+      "Section3": "Leading Programs for Learning."
     }
   }
