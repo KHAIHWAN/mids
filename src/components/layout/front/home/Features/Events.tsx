@@ -20,6 +20,7 @@ const features = [
 		title: "Streamline your workflows effortlessly",
 		details:
 			"Organize tasks, deadlines, and team collaboration in one place. Use customizable boards to manage projects efficiently and automate routine updates.",
+		location: "Multidisciplinary and Interdisciplinary School, Chiang Mai University (MIdS CMU)",
 		tutorialLink: "#",
 	},
 	
@@ -27,7 +28,7 @@ const features = [
 
 export default function Events() {
 	const translate = useTranslations('Events')
-	
+
 	return (
 		<section className='mt-6 md:mt-12'>
 			<div className='space-y-8 md:space-y-12'>
