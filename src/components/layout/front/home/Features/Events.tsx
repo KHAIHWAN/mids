@@ -1,8 +1,10 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+"use client"
+
 import Link from "next/link"
-import { MapPin } from "lucide-react"
 import { useTranslations } from "next-intl"
+
+import { Button } from "@/components/ui/button"
+import { ArrowRight, MapPin } from "lucide-react"
 
 const features = [
 	{
@@ -25,6 +27,7 @@ const features = [
 
 export default function Events() {
 	const translate = useTranslations('Events')
+	
 	return (
 		<section className='mt-6 md:mt-12'>
 			<div className='space-y-8 md:space-y-12'>

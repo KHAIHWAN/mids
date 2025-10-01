@@ -1,9 +1,9 @@
 "use client"
 
 import Hero from "./hero/Hero"
-import Programs from "./Features/Programs"
-import Journal from "./Features/Journal"
 import Events from "./Features/Events"
+import Journal from "./Features/Journal"
+import Programs from "./Features/Programs"
 
 export default function Home() {
 	return (

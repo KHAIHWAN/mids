@@ -1,5 +1,8 @@
 "use client"
 
+import { useTranslations } from "next-intl"
+
+import { Card, CardContent } from "@/components/ui/card"
 import {
 	Carousel,
 	CarouselContent,
@@ -7,11 +10,10 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Card, CardContent } from "@/components/ui/card"
-import { useTranslations } from "next-intl"
 
 export default function Journal() {
 	const translate = useTranslations('Journal')
+	
 	return (
 		<section className='mt-6 md:mt-12'>
 			<div className='space-y-8 md:space-y-12'>

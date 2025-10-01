@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+import { cn } from '@/lib/utils';
 import { useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
 
@@ -7,10 +10,9 @@ import {
     AccordionItem,
     AccordionTrigger
 } from "@/components/ui/accordion";
-import { navigationAbout, navigationAcademic, navigationNews } from './MockDataNavigtion';
-import { cn } from '@/lib/utils';
-import Link from "next/link";
 import { Button } from '@/components/ui/button';
+
+import { navigationAbout, navigationAcademic, navigationNews } from './MockDataNavigtion';
 
 export default function NavigationMobile() {
     const locale = useLocale();

@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 export default function Hero() {
     const locale = useLocale();
     const translate = useTranslations('Hero');
+    
     return (
         <div className=' w-full flex flex-col gap-12 px-6 py-4 md:py-16'>
 			<div className='text-start'>

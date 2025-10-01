@@ -1,8 +1,7 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl"
-
 import Link from "next/link"
+import { useLocale, useTranslations } from "next-intl"
 
 import {
 	Card,
@@ -17,11 +16,13 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel"
+
 import { navigationAcademic } from "../../header/MockDataNavigtion"
 
 export default function Programs() {
 	const locale = useLocale()
 	const translate = useTranslations('Programs')
+	
 	return (
 		<section className='mt-6 md:mt-12'>
 			<div className='space-y-8 md:space-y-12'>
