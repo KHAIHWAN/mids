@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
-import { CalendarIcon, MapPin } from "lucide-react"
+import { MapPin } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 const features = [
 	{
@@ -23,14 +24,15 @@ const features = [
 ]
 
 export default function Events() {
+	const translate = useTranslations('Events')
 	return (
 		<section className='mt-6 md:mt-12'>
 			<div className='space-y-8 md:space-y-12'>
 				<div className='grid gap-2 md:grid-row-2 md:gap-6'>
-					<h2 className='text-xl font-medium text-[#4D6E37]'>EVENTS</h2>
+					<h2 className='text-xl font-medium text-[#4D6E37]'>{translate('Title')}</h2>
 					<div className='space-y-2'>
 						<h2 className='text-lg sm:text-xl font-semibold tracking-tight'>
-							Upcoming Education Events and Students Activities
+							{translate('Description')}
 						</h2>
 					</div>
 				</div>
