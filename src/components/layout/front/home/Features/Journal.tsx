@@ -7,17 +7,19 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui/carousel"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
+import { useTranslations } from "next-intl"
 
 export default function Journal() {
+	const translate = useTranslations('Journal')
 	return (
 		<section className='mt-6 md:mt-12'>
 			<div className='space-y-8 md:space-y-12'>
 				<div className='grid gap-2 md:grid-row-2 md:gap-6'>
-					<h2 className='text-xl font-medium text-[#508BC3]'>JOURNAL</h2>
+					<h2 className='text-xl font-medium text-[#508BC3]'>{translate('Title')}</h2>
 					<div className='space-y-2'>
 						<h2 className='text-lg sm:text-xl font-semibold tracking-tight'>
-							Monthly Journal Updates
+							{translate('Description')}
 						</h2>
 					</div>
 				</div>
