@@ -14,7 +14,7 @@ export default function Hero() {
 				</h1>
 				<h1 className={`${locale === 'th' ? 'font-kanit text-2xl' : 'font-golos-text text-4xl'} sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter`}>
                     {translate('Section2')}
-                    <span className='px-2 font-nunito font-black bg-clip-text text-transparent bg-gradient-to-r from-[#6667AB] via-[#6667AB] via-70% to-[#508BC3]'>
+                    <span className='px-2 font-nunito font-black bg-clip-text text-transparent bg-gradient-to-r from-[#6667AB] via-[#6667AB] via-55% to-[#508BC3]'>
                         MIdS
                     </span>
                 </h1>

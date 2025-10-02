@@ -11,11 +11,11 @@ export default function Home() {
 			<Hero />
 			<hr className='my-4' />
 			<Programs />
-			<hr className='my-4' />
+			<hr className='my-8' />
 			<Journal />
-			<hr className='my-4' />
+			<hr className='my-8' />
 			<Events />
-			<hr className='my-4' />
+			<hr className='my-8' />
 		</div>
 	)
 }
