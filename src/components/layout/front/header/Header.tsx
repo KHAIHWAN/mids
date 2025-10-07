@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
+import { LogIn } from "lucide-react";
 
 export default function Header() {
     const translate = useTranslations('HeaderAction');
@@ -24,7 +25,10 @@ export default function Header() {
 
                     <div className="flex items-center gap-3">
                         <LanguageSwitcher2 />
-                        <Button className="hidden sm:inline-flex">{translate('Login')}</Button>
+                        <Button className="hidden sm:inline-flex bg-[#6666AB] hover:bg-[#6667AB]/80 text-white transition-all">
+                            {translate('Login')}
+                            <LogIn />
+                        </Button>
 
                         {/* Mobile Menu */}
                         <div className="md:hidden">

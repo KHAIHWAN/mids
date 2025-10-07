@@ -42,7 +42,7 @@ export default function Events() {
 				</div>
 			</div>
 
-			<div className='mt-8 md:mt-16 w-full mx-auto space-y-20'>
+			<div className='mt-6 md:mt-12 w-full mx-auto space-y-20'>
 				{features.map((feature, idx) => (
 					<div
 						key={feature.category}

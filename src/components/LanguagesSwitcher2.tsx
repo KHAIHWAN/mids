@@ -22,7 +22,7 @@ export default function LanguagesSwitcher2() {
     return (
         <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
-                <Button variant="outline">
+                <Button variant="outline" >
                     {locale === 'en' ? 'English' : 'ภาษาไทย'}
                 </Button>
             </DropdownMenuTrigger>
